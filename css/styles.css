@@ -6,6 +6,10 @@
     --main-blue: #2196F3;
     --text-title-dark: #212121;
     --text: #757575;
+    --full-dark: #000000;
+    --btn-fltr-back: #F5F4FA;
+    --text-mail-tel: rgba(255, 255, 255, 0.6);
+    --btn-hero-back: #188CE8;
 }
 
 body {
@@ -34,7 +38,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #000000;
+    color: var(--full-dark);
 }
 
 .logo-footer {
@@ -59,7 +63,6 @@ body {
 }
 
 .page-nav {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -71,7 +74,12 @@ body {
 .list-nav {
     display: flex;
     gap: 50px;
+    color: var(--text-title-dark);
 }
+.list-nav a {
+    color: var(--text-title-dark);
+}
+
 .list-cont {
     display: flex;
     gap: 50px;
@@ -80,7 +88,6 @@ body {
 
 .studio-tel,
 .studio-mail {
-    font-family: 'Roboto';
     color: var(--text);
     font-weight: 500;
     font-size: 14px;
@@ -105,7 +112,6 @@ body {
     height: 120px;
     left: 452px;
     top: 200px;
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -121,7 +127,7 @@ body {
     width: 216px;
     height: 50px;
     border-radius: 4px;
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -135,7 +141,7 @@ body {
  
 .button-hero:hover,
 .button-hero:focus {
-    background-color: #188CE8;
+    background-color: var(--btn-hero-back);
 }
 
 .specials {
@@ -151,7 +157,6 @@ body {
 }
 
 .advantage-title {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -161,8 +166,6 @@ body {
 }
 
 .advantage-text {
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;      
     letter-spacing: 0.03em;    
@@ -170,7 +173,6 @@ body {
 }
 .our-work-title,
 .our-team-title {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -208,7 +210,6 @@ body {
 }
 
 .our-team-member {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -218,8 +219,6 @@ body {
 }
 
 .our-team-specialist {
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -236,22 +235,18 @@ body {
 }
 
 .address-info-map {
-    font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: var(--main-light);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-light);
 }
 
 .address-info-mail,
 .address-info-tel {
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text-mail-tel);
 }
 
 .button-filtr {
@@ -264,14 +259,14 @@ body {
 }
 
 .button-filtr-item {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-title-dark);
-    background: #F5F4FA;
+    background: var(--btn-fltr-back);
     border-radius: 4px;
     border: none;
     cursor: pointer;
@@ -292,7 +287,6 @@ body {
 }
 
 .portfolio-title {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -301,8 +295,6 @@ body {
 }
 
 .portfolio-text {
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
